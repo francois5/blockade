@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="icon" type="img/ico" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
+  </head>
+  <body>
+    <div class="logo"></div>
+    <div class="form-block">
+      <h1>Sign up</h1>
+      <form action="signup.php" method="POST">
+        <input type="text" name="user" placeholder="Username" id="username" />
+        <input type="password" name="password1" value="" placeholder="Password" id="password" />
+	<input type="password" name="password2" placeholder="Repeat password" id="password" />
+        <button type="submit">Sign up</button>
+      </form>
+      <form action="login.php">
+	<button type="submit">Back to login</button>
+      </form>
+    </div>
+  </body>
+</html>
