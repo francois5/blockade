@@ -3,12 +3,6 @@
 
     session_start();
 
-    function clog( $data ){
-    	echo '<script>';
-    	echo 'console.log("'. $data .'")';
-      	echo '</script>';
-    }
-
     if($_SERVER['REQUEST_METHOD'] == "POST") {
         if(auth($_POST['user'], $_POST['password'])) {
             header('Location: game.php');

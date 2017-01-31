@@ -1,7 +1,7 @@
 var TILE_SIZE = 60;
 
 //var SERVER_URL = "http://localhost/";
-var SERVER_URL = "https://div.vaneesbeeck.me/";
+var SERVER_URL = "https://div.vaneesbeeck.me/blockade/";
 
 var game = new Phaser.Game(16*TILE_SIZE, 9*TILE_SIZE, Phaser.AUTO, 'blockade',
 			   { preload: preload,
