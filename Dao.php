@@ -97,10 +97,6 @@ class Dao {
         $stmt = self::$sqlite->prepare(
             'UPDATE games SET end = '.time().' 
              WHERE id = '.$game_id.';');
-        if($stmt == false)
-            file_put_contents('debug_end.log', 'DAO END FAILED: '.$game_id, FILE_APPEND);
-        else
-            file_put_contents('debug_end.log', 'DAO END SUCCESS: '.$game_id, FILE_APPEND);
         $stmt->execute();
         self::closeDB();
     }
